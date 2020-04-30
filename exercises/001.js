@@ -16,12 +16,10 @@ Function's return value (output):
 {
   Kevin : 'Spacey'
 }
-Starter Code
-function transformFirstAndLast(array) {
-  // your code here
-}
-*/
 
+*/
 function transformFirstAndLast(array) {
-  //your code here
+  return {
+    [array[0]]: array[array.length-1],
+  };
 }

@@ -104,7 +104,7 @@ describe('listAllValues', function() {
 
 describe('transformEmployeeData', function() {
   var input;
-  
+
   beforeEach(function() {
     input = [
       [
