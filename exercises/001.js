@@ -20,6 +20,6 @@ Function's return value (output):
 */
 function transformFirstAndLast(array) {
   return {
-    [array[0]]: array[array.length-1],
+    [array[0]]: array[array.length - 1],
   };
 }

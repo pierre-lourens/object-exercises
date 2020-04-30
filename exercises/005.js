@@ -28,7 +28,7 @@ function transformEmployeeData(array) {
   const employeeList = [];
 
   for (let i = 0; i < array.length; i++) {
-    let employee = {};
+    const employee = {};
 
     for (let j = 0; j < array[i].length; j++) {
       employee[array[i][j][0]] = array[i][j][1];

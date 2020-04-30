@@ -30,7 +30,7 @@ var input = [
 function fromListToObject(array) {
   var obj = {};
 
-  for (let i = 0; i < array.length; i++) {;
+  for (let i = 0; i < array.length; i++) {
     obj[array[i][0]] = array[i][1];
   }
 

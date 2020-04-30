@@ -47,14 +47,9 @@ var customerData = {
   }
 };
 
-
 function greetCustomer(firstName) {
   var greeting;
-  let numVisits = 0;
-
-  if (firstName in customerData) {
-    numVisits = customerData[firstName]["visits"];
-  }
+  let numVisits = checkVisits(firstName);
 
   switch (numVisits) {
     case 0:
@@ -64,8 +59,17 @@ function greetCustomer(firstName) {
       greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`;
       break;
     default:
-      greeting = `Welcome back, ${firstName}! So glad to see you again!`
-      break;      
+      greeting = `Welcome back, ${firstName}! So glad to see you again!`;
+      break;
   }
+
   return greeting;
 }
+
+const checkVisits = (firstName) => {
+  if (firstName in customerData) {
+    return customerData[firstName]["visits"];
+  }
+
+  return 0;
+};

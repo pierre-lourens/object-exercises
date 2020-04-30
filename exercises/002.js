@@ -25,7 +25,7 @@ function getAllKeys(obj) {
 }
 */
 
-function getAllKeys(obj){
+function getAllKeys(obj) {
   // your code here
   const arr = [];
   let i = 0;
